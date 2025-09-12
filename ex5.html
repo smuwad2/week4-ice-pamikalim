@@ -15,7 +15,14 @@
         }
 
         /* Add CSS code here */ 
-
+        #rect {
+            width: 150px;
+            height: 150px;
+            border-radius: 0;
+            background-color: goldenrod;
+            text-align: center;
+            padding-top: 60px;
+        }
     </style>
 </head>
 <body>
@@ -26,6 +33,13 @@
         
         <script>
            // add code here
+           function mOver(obj) {
+  		    obj.style.borderRadius = "0";
+            }
+            function mOut(obj) {
+  		        obj.style.borderRadius = "50%";
+            }
+
         </script>
                 
 </body>
